@@ -1,6 +1,6 @@
 # IOSTextPath
 
-![Platform](https://img.shields.io/badge/platform-iOS-green) ![build](https://github.com/gelatoas/IOSTextPath.git/workflows/build/badge.svg)
+![Platform](https://img.shields.io/badge/platform-iOS-green) [![build](https://github.com/gelatoas/IOSTextPath/actions/workflows/build.yml/badge.svg)](https://github.com/gelatoas/IOSTextPath/actions/workflows/build.yml)
 
 ## Example
 

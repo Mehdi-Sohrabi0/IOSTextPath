@@ -25,7 +25,7 @@ final class CGPathView: UIView {
     }
 
     override func draw(_ rect: CGRect) {
-        guard let path, let context = UIGraphicsGetCurrentContext() else { return }
+        guard let path = path, let context = UIGraphicsGetCurrentContext() else { return }
         UIColor.white.setFill()
         context.fill(rect)
 

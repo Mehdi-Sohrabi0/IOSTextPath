@@ -1,0 +1,22 @@
+{
+  "name": "EditorTextPath",
+  "version": "0.1.0",
+  "summary": "A short description of EditorTextPath.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/mehdok/EditorTextPath",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mehdok": "mehdok@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/mehdok/EditorTextPath.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "Sources/EditorTextPath/Classes/**/*"
+}

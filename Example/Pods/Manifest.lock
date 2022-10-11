@@ -1,0 +1,16 @@
+PODS:
+  - EditorTextPath (0.1.0)
+
+DEPENDENCIES:
+  - EditorTextPath (from `../`)
+
+EXTERNAL SOURCES:
+  EditorTextPath:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  EditorTextPath: e33941fb2a1a3a8a9515725b11cfd0b23ae09f2e
+
+PODFILE CHECKSUM: 0156589f5f842cf189d96c0f89a01c5612a3cb14
+
+COCOAPODS: 1.11.3

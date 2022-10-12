@@ -5,7 +5,8 @@
 //  Created by Mehdi Sohrabi on 2022-10-09.
 //
 
-import Foundation
+import CoreGraphics
+import UIKit
 
 /// Text frame representation. This can represent a simple text rectangle (eq. UITextView text content),
 /// as well as a complex frame defined by CGPath

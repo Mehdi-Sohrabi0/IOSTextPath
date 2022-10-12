@@ -5,7 +5,8 @@
 //  Created by Mehdi Sohrabi on 2022-10-09.
 //
 
-import Foundation
+import CoreGraphics
+import UIKit
 
 /// Class represents single character representation - glyph
 public final class TextPathGlyph {

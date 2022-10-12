@@ -5,7 +5,8 @@
 //  Created by Mehdi Sohrabi on 2022-10-10.
 //
 
-import Foundation
+import CoreGraphics
+import UIKit
 
 public extension CGPath {
     func svg() -> String {

@@ -2,6 +2,17 @@
 
 ![Platform](https://img.shields.io/badge/platform-iOS-green) [![build](https://github.com/gelatoas/IOSTextPath/actions/workflows/build.yml/badge.svg)](https://github.com/gelatoas/IOSTextPath/actions/workflows/build.yml)
 
+Convert `NSAttributedText` to `CGPath` and `SVG` text path;
+
+Supported attributes are:
+- [x] NSAttributedString.Key.strikethroughStyle
+- [x] NSAttributedString.Key.underlineStyle
+- [x] NSAttributedString.Key.kern
+- [x] NSAttributedString.Key.font
+- [x] NSAttributedString.Key.paragraphStyle
+- [ ] Support RTL language
+- [x] Support right alignment texts
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -14,6 +25,8 @@ To install it, simply add the following line to your Podfile:
 ```ruby
 pod 'EditorTextPath', :git => 'https://github.com/gelatoas/IOSTextPath.git'
 ```
+
+You can also use SPM;
 
 ## Author
 

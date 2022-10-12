@@ -34,11 +34,17 @@ class ViewController: UIViewController {
     }()
 
     lazy var sampleText: NSAttributedString = {
-        let text = NSMutableAttributedString(string: "Example")
+        let text = NSMutableAttributedString(string: "Example\ntext")
+
+        var style = NSMutableParagraphStyle()
+        style.lineSpacing = 0
+        style.alignment = .right
+
         text.addAttributes([.font: UIFont.systemFont(ofSize: 38, weight: .bold),
                             .foregroundColor: UIColor.black,
                             .strikethroughStyle: 1,
-                            .underlineStyle: 1],
+                            .underlineStyle: 1,
+                            .paragraphStyle: style],
                            range: NSRange(location: 0, length: text.length))
         return text
     }()

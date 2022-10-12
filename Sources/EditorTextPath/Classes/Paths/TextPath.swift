@@ -5,7 +5,8 @@
 //  Created by Mehdi Sohrabi on 2022-10-09.
 //
 
-import Foundation
+import CoreGraphics
+import UIKit
 
 /// Text path represents a CGPath representation of text frame, glyphs and typographic properties
 public class TextPath {

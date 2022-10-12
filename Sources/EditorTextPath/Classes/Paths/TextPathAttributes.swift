@@ -5,6 +5,6 @@
 //  Created by Mehdi Sohrabi on 2022-10-09.
 //
 
-import Foundation
+import UIKit
 
 public typealias TextPathAttributes = [NSAttributedString.Key: Any]

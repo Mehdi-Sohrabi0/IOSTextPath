@@ -6,7 +6,7 @@
 //
 
 import CoreGraphics
-import Foundation
+import UIKit
 
 public extension NSAttributedString {
     /// Creates a text path and a collection of text lines and

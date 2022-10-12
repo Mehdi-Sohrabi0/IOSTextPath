@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "EditorTextPath",
+    platforms: [.iOS("14")],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
@@ -25,7 +26,8 @@ let package = Package(
         ),
         .testTarget(
             name: "EditorTextPathTests",
-            dependencies: ["EditorTextPath"]
+            dependencies: ["EditorTextPath"],
+            path: "Example/Tests"
         ),
     ]
 )

@@ -11,7 +11,7 @@ Supported attributes are:
 - [x] NSAttributedString.Key.font
 - [x] NSAttributedString.Key.paragraphStyle
 - [ ] Support RTL language
-- [ ] Support right alignment texts
+- [x] Support right alignment texts
 
 ## Example
 

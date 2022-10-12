@@ -146,6 +146,7 @@ public extension NSAttributedString {
                     }
 
                     var lineOffsetY = 0.0
+                    var startOffsetX: CGFloat?
 
                     if tpLine.glyphs.count != 0 {
                         tpLine.effectiveAscent = effectiveAscent
@@ -153,7 +154,10 @@ public extension NSAttributedString {
                         for tpGlyph in tpLine.glyphs {
                             let position = tpGlyph.position
                             let offset = CGPoint(x: position.x, y: position.y + (tpLine.ascent - tpLine.effectiveAscent) + linesShift)
+
+                            startOffsetX = startOffsetX ?? (offset.x + tpGlyph.originOffset.x) // save first char position
                             lineOffsetY = offset.y
+
                             let T = CGAffineTransform(translationX: offset.x, y: offset.y)
                             path.addPath(tpGlyph.path, transform: T)
                             tpGlyph.position = offset
@@ -165,7 +169,7 @@ public extension NSAttributedString {
 
                     // add strike trough if exists
                     if let strikePath = getStrikePath(tpLine) {
-                        let offset = CGPoint(x: tpLine.lineBounds.minX,
+                        let offset = CGPoint(x: startOffsetX ?? tpLine.lineBounds.minX,
                                              y: lineOffsetY + (tpLine.lineBounds.midY * 2 / 3))
                         let translation = CGAffineTransform(translationX: offset.x, y: offset.y)
                         path.addPath(strikePath, transform: translation)
@@ -174,7 +178,7 @@ public extension NSAttributedString {
                     // add underline if exists
                     if let underlinePath = getUnderlinePath(tpLine) {
                         let lineHeight = underlinePath.boundingBoxOfPath.height * 2
-                        let offset = CGPoint(x: tpLine.lineBounds.minX, y: lineOffsetY - lineHeight)
+                        let offset = CGPoint(x: startOffsetX ?? tpLine.lineBounds.minX, y: lineOffsetY - lineHeight)
                         let translation = CGAffineTransform(translationX: offset.x, y: offset.y)
                         path.addPath(underlinePath, transform: translation)
                     }

@@ -5,10 +5,10 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
                        DESC
-  s.homepage         = 'https://github.com/gelatoas/IOSTextPath.git'
+  s.homepage         = 'https://github.com/mehdok/IOSTextPath.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Mehdi Sohrabi' => 'mehdok@gmail.com' }
-  s.source           = { :git => 'https://github.com/gelatoas/IOSTextPath.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/mehdok/IOSTextPath.git', :tag => s.version.to_s }
   s.ios.deployment_target = '14.0'
   s.source_files = 'Sources/EditorTextPath/Classes/**/*'
 end

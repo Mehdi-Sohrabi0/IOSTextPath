@@ -1,6 +1,6 @@
 # IOSTextPath
 
-![Platform](https://img.shields.io/badge/platform-iOS-green) [![build](https://github.com/gelatoas/IOSTextPath/actions/workflows/build.yml/badge.svg)](https://github.com/gelatoas/IOSTextPath/actions/workflows/build.yml)
+![Platform](https://img.shields.io/badge/platform-iOS-green) [![build](https://github.com/mehdok/IOSTextPath/actions/workflows/build.yml/badge.svg)](https://github.com/mehdok/IOSTextPath/actions/workflows/build.yml)
 
 Convert `NSAttributedText` to `CGPath` and `SVG` text path;
 
